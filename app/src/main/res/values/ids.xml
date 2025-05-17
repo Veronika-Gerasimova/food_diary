@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="avigation_home"/>
+    <item type="id" name="navigation_dashboard"/>
+    <item type="id" name="navigation_notifications"/>
+    <item name="meal_title" type="id" />
+    <item name="meal_table" type="id" />
+</resources>

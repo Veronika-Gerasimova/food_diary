@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F2F2F2">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/weight_loss_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить результаты"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Поле ввода веса -->
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите отвес (в кг)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- Поле ввода объёма талии -->
+    <EditText
+        android:id="@+id/editTextWaist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите минус в талии (в см)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- Поле ввода других данных -->
+    <EditText
+        android:id="@+id/editTextOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите другие заметки (опционально)"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- Кнопка "Сохранить" -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_marginTop="16dp" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка "Назад" -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/text_user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пользователь"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_weight_loss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текущий вес" />
+
+    <TextView
+        android:id="@+id/text_waist_loss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Уменьшение талии" />
+
+    <TextView
+        android:id="@+id/text_other_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Примечания" />
+
+    <Button
+        android:id="@+id/btn_view_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="График" />
+
+    <Button
+        android:id="@+id/button_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить рекомендацию" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Профиль" />  <!-- иконка для профиля -->
+    <item
+        android:id="@+id/nav_ask_question"
+        android:icon="@drawable/ic_question"
+        android:title="Задать вопрос" />  <!-- иконка для вопроса -->
+
+    <item
+        android:id="@+id/nav_add_weight_loss"
+        android:icon="@drawable/ic_weight_loss"
+        android:title="Добавить результат" />
+
+
+
+</menu>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F1C9F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProfileUserActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1C9F8"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/welcome_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="РАСЧЕТ КБЖУ "
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/age_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Возраст"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/input_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="20"
+                android:ems="10"
+                android:hint="20"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/gender_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пол"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/gender_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/male_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Мужской" />
+                <RadioButton
+                    android:id="@+id/female_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Женский" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/activity_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Образ жизни"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/activity_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/passive_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Сидячий" />
+
+                <RadioButton
+                    android:id="@+id/two_times_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Малоподвижный (1-2 тренировки в неделю)" />
+                <RadioButton
+                    android:id="@+id/three_times_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Умеренный (3 тренировки в неделю)" />
+                <RadioButton
+                    android:id="@+id/six_times_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Подвижный (больше 4 тренировок / активная работа) " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/height_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Рост"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/input_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Рост"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/weight_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вес"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/input_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Вес"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/goal_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цель"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/goal_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/lose_weight_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Похудеть" />
+
+                <RadioButton
+                    android:id="@+id/save_weight_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Поддерживать форму" />
+
+                <RadioButton
+                    android:id="@+id/gain_weight_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Набрать вес" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="calculateCPFC"
+                android:background="#F1C9F8"
+                android:text="Рассчитать КБЖУ и перейти" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

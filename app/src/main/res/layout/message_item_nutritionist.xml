@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="start"
+    android:orientation="horizontal">
+
+    <!-- Фото нутрициолога -->
+    <ImageView
+        android:id="@+id/nutritionistPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical" />
+    <!-- Контейнер для имени и текста сообщения -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:layout_gravity="center_vertical">
+
+        <!-- Имя нутрициолога -->
+        <TextView
+            android:id="@+id/nutritionistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutritionist Name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Сообщение нутрициолога -->
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nutritionist_bubble"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:text="Ответ"
+            android:maxWidth="250dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="start"/>
+
+    </LinearLayout>
+</LinearLayout>
